@@ -1,0 +1,6 @@
+<!--Parent Component Span to show count-->
+<span class="d-block bg-success book-header" style="width: 100%"># Total No. of Selected Books: {{countSelectedBooks}}</span>
+<!--Child Component List to display all the books in unordered List-->
+ <app-books-list (noOfBooks)="pushBookCount($event)"></app-books-list>
+
+

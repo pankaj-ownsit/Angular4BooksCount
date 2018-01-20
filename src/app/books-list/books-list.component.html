@@ -1,0 +1,10 @@
+<div style="width: 100%">
+<ul class="list-group">
+  <li *ngFor = "let book of booksList" (click)="selectedBook(book)" class="list-group-item" [ngClass]="(book.selected)?'active':''">
+        <b>Title:</b> {{book.title}} <br/>
+        <b>Description:</b> {{book.description  | slice:0:50}}... <br/>
+        <b>Author:</b> {{book.author}} <br/>
+        <b>Published Date:</b> {{book.published}} <br/>
+  </li>
+</ul >
+</div>
